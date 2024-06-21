@@ -12,8 +12,9 @@ app.use(cors());
 dbConnection();
 
 app.use("/auth", require("./src/routes/auth"));
-app.use("/mails", require("./src/routes/mails"));
-app.use("/linkedin", require("./src/routes/linkedin"));
+app.use("/expense", require("./src/routes/expense"));
+app.use("/income", require("./src/routes/income"));
+app.use("/categoria", require("./src/routes/categoria"));
 
 app.listen(process.env.PORT, () => {
   console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);

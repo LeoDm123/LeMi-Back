@@ -1,25 +1,33 @@
 const { Schema, model } = require("mongoose");
 
+const inviteSchema = Schema({
+  email: {
+    type: String,
+    required: true,
+  },
+});
+
 const userSchema = Schema({
   userName: {
     type: String,
     required: true,
   },
-
-  userEmail: {
+  email: {
     type: String,
     required: true,
     unique: true,
   },
-
-  userPassword: {
+  password: {
     type: String,
     required: true,
   },
-
   rol: {
     type: String,
-    default: "user",
+    default: "User",
+  },
+  invites: {
+    type: [inviteSchema],
+    default: [],
   },
 });
 
