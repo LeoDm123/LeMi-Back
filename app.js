@@ -12,6 +12,7 @@ app.use(cors());
 dbConnection();
 
 app.use("/auth", require("./src/routes/auth"));
+app.use("/budget", require("./src/routes/budget"));
 app.use("/expense", require("./src/routes/expense"));
 app.use("/income", require("./src/routes/income"));
 app.use("/categoria", require("./src/routes/categoria"));
