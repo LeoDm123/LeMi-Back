@@ -20,7 +20,6 @@ const createIncome = async (req, res) => {
     !email ||
     !comentarios ||
     !categoria ||
-    !subCategoria ||
     !monto ||
     !divisa ||
     !fechaPago ||

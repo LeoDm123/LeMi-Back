@@ -15,7 +15,6 @@ const egresoSchema = Schema({
 
       subCategoria: {
         type: String,
-        required: true,
       },
 
       comentarios: {
@@ -46,6 +45,18 @@ const egresoSchema = Schema({
       repetir: {
         type: String,
         required: true,
+      },
+
+      dividir: {
+        type: Boolean,
+      },
+
+      condDiv: {
+        type: String,
+      },
+
+      montoDiv: {
+        type: Number,
       },
     },
   ],

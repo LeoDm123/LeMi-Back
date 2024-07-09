@@ -15,7 +15,6 @@ const ingresoSchema = Schema({
 
       subCategoria: {
         type: String,
-        required: true,
       },
 
       comentarios: {
